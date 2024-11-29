@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\varsh\OneDrive\Desktop\petconnect logo.jpg" alt="Pet Connect Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add-pet.html">Add Pet</a>
+            <a href="adoption-form.html">Adopt a Pet</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Pets Available for Adoption</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-name" placeholder="Search by name">
+            <select id="search-type">
+                <option value="">Select Pet Type</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+            <input type="text" id="search-breed" placeholder="Search by breed">
+            <button onclick="searchPets()">Search</button>
+        </div>
+<div class="pet-list" id="pet-list">
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Adoption Platform</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Pet for Adoption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Pet Adoption</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add-pet.html">Add Pet</a>
+            <a href="adoption-form.html">Adopt a Pet</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Add Pet for Adoption</h1>
+
+        <form id="add-pet-form">
+            <label for="pet-name">Pet Name</label>
+            <input type="text" id="pet-name" name="pet-name" required>
+
+            <label for="pet-type">Pet Type</label>
+            <select id="pet-type" name="pet-type" required>
+                <option value="">Select Pet Type</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+
+            <label for="pet-breed">Pet Breed</label>
+            <input type="text" id="pet-breed" name="pet-breed" required>
+
+            <label for="pet-age">Pet Age</label>
+            <input type="number" id="pet-age" name="pet-age" required>
+
+            <label for="pet-description">Description</label>
+            <textarea id="pet-description" name="pet-description" required></textarea>
+
+            <label for="pet-image">Pet Image URL</label>
+            <input type="url" id="pet-image" name="pet-image">
+
+            <button type="submit">Add Pet</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Adoption Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
